@@ -1,0 +1,56 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+      
+    </head>
+    <body>
+        <div class="content">
+        <div class="container">
+            <div class="board-home">
+                <h3 id="home">HOME</h3>
+                <h1 id="score-home">0</h1>
+                <div class="add-scores-home">
+                    <button id="plus-1"  onclick="add1Home()">+1</button>
+                    <button id="plus-2" onclick="add2Home()">+2</button>
+                    <button id="plus-3" onclick="add3Home()">+3</button>
+                </div>
+             <div class="adjust-score-home">
+                    <button id="addition-home"  onclick="incrementHome()">+</button>
+                    <button id="subtraction-home" onclick="subtractHome()">-</button>
+                </div>
+               </div>
+                <div class="chronometer">
+                <div class="time">
+                     <p> <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span></p>
+                </div>
+                <div>
+                    <img id="img-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQraFUbxg32MU37o-ALVcEcqLR6tL8oXR7hrbaSnosmpuH7jdA_mRF0jHn-IxNWAhQD478&usqp=CAU">
+                </div>
+           <div class="commands">
+                    <button id="start-btn" onclick="start()">></button>
+                    <button id="pause-btn" onclick="pause()">=</button>
+                    <button id="reset-btn" onclick="reset()">RES</button>
+               </div>
+            </div>
+            <div>
+                <div class="board-guest">
+                <h3 id="guest">AWAY</h3>
+                <h1 id="score-guest">0</h1>
+                <div class="add-scores-guest">
+                    <button id="plus-1" onclick="add1Guest()">+1</button>
+                    <button id="plus-2"  onclick="add2Guest()">+2</button>
+                    <button id="plus-3" onclick="add3Guest()">+3</button>
+                </div>
+                 <div class="adjust-score-guest">
+                    <button id="addition-guest"  onclick="incrementGuest()">+</button>
+                    <button id="subtraction-guest" onclick="subtractGuest()">-</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="credits">
+        <p >Powered by Ruben Bliz Barradas</p> </div>
+        <script src="index.js"></script>
+    </body>
+    
+</html>

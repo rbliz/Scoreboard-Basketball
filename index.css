@@ -1,0 +1,309 @@
+body {
+    margin: 0;
+ background: url("https://images.unsplash.com/photo-1595795279832-13f0df36fbb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJhc2tldGJhbGx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60");
+ height: 500px;
+}
+@font-face {
+    font-family: 'Digital Display';
+    src: url('https://praxeds.github.io/scrimba-basketball-scoreboard/Assets/Digital-Display.woff2') format('woff2'),
+        url('https://praxeds.github.io/basketball-scoreboard/Assets/Digital-Display.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1B244A;
+    width: 625px;
+height: 320px;
+top: -1135px;
+left: -1996px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+border-radius: 7px;
+border: 7px solid black;
+}
+
+#home{
+    width: 205px;
+    height: 36px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+text-shadow: 5px 0px black;
+   font-family: Verdana;
+font-size: 40px;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 0em;
+text-align: center;
+  color: #EEEEEE; 
+
+    
+}
+#score-home{
+    width: 150px;
+height: 125px;
+font-size: 115px;
+font-weight: 400;
+line-height: 127px;
+letter-spacing: 0em;
+text-align: center;
+color: #F94F6D;
+background-color: black;
+border-radius: 5px;
+padding-left: 54px;
+margin-top: 0px;
+margin-bottom: 1px;
+font-family: Digital Display;
+text-shadow: 1px 0px white;
+border: 2px dotted white;
+
+}
+.add-scores-home{
+    display: flex;
+    justify-content: space-around;
+    width: 205px;
+height: 45px;
+top: 271px;
+left: 82px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+#plus-1{
+    width: 45px;
+height: 45px;
+top: 271px;
+left: 82px;
+border-radius: 5px;
+border: 2px;
+ border: 2px solid #9AABD8;
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: center;
+color: #9AABD8;
+padding: 1px 10px 1px 10px;
+
+margin-right: 10px;
+ background-color: #1B244A;
+font-family: Digital Display;
+text-shadow: 1px 1px black;
+
+}
+#plus-2{
+     width: 45px;
+height: 45px;
+top: 271px;
+left: 82px;
+border-radius: 5px;
+border: 2px;
+ border: 2px solid #9AABD8;
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: center;
+color: #9AABD8;
+padding: 1px 10px 1px 10px;
+
+margin-right: 10px;
+    background-color: #1B244A;
+font-family: Digital Display;
+text-shadow: 1px 1px black;
+
+}
+#plus-3{
+     width: 45px;
+height: 45px;
+top: 271px;
+left: 82px;
+border-radius: 5px;
+border: 2px;
+ border: 2px solid #9AABD8;
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: center;
+color: #9AABD8;
+padding: 1px 10px 1px 10px;
+    background-color: #1B244A;
+font-family: Digital Display;
+text-shadow: 1px 1px black;
+}
+
+#guest{
+     width: 205px;
+    height: 36px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+   font-family: Verdana;
+font-size: 40px;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 0em;
+text-align: center;
+  color: #EEEEEE; 
+text-shadow: 5px 0px black;
+
+}
+#score-guest{
+     width: 150px;
+height: 125px;
+font-size: 115px;
+font-weight: 400;
+line-height: 127px;
+letter-spacing: 0em;
+text-align: center;
+color: #F94F6D;
+background-color: black;
+border-radius: 5px;
+padding-left: 54px;
+margin-top: 0px;
+margin-bottom: 1px;
+font-family: Digital Display;
+text-shadow: 1px 0px white;
+border: 2px dotted white;
+}
+.add-scores-guest{
+     display: flex;
+    justify-content: space-around;
+    width: 205px;
+height: 45px;
+top: 271px;
+left: 82px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.credits{
+font-family: Digital Display;
+color: white;
+ font-size: 25px;
+ margin-top: 200px;
+ text-align: center;
+ text-shadow: 1px 1px black;
+}
+.chronometer{
+font-family: Digital Display;
+font-size: 25px;
+color: yellow;
+text-shadow: 2px 2px black;
+margin-top: 5px;
+width: 155px;
+margin-right: 9px;
+}
+ .time{
+     margin-left: 35px;
+ }   
+
+.commands{
+    margin-top: 85px;
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: black;
+    width: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 8px;
+    border: 1px solid white;
+}
+#start-btn{
+    margin-right: 5px;
+    border: 1px solid darkred;
+    text-shadow: 1px 0px black;
+   font-family: Verdana;
+   background-color: white;
+   border-radius: 3px;
+
+}
+#pause-btn{
+    margin-right: 5px;
+    border: 1px solid darkred;
+    text-shadow: 1px 0px black;
+   font-family: Verdana;
+    background-color: white;
+    border-radius: 3px;
+
+}
+#reset-btn{
+    border: 1px solid darkred;
+    text-shadow: 1px 0px black;
+    font-family: Verdana;
+    background-color: white;
+    border-radius: 3px;
+}
+.adjust-score-home{
+display: flex;
+justify-content: space-around;
+
+}
+#subtraction-home{
+    margin-right: 27px;
+    height: 18px;
+    font-size: 12px;
+    font-weight: 900;
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+    border-radius: 2px;
+    background-color: #1B244A;
+
+    font-family: Digital Display;
+}
+#addition-home{
+    margin-left: 28px;
+    height: 18px;
+    font-size: 11px;
+    font-weight: 900;
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+    border-radius: 2px;
+    background-color: #1B244A;
+
+    font-family: Digital Display;
+}
+.adjust-score-guest{
+    display: flex;
+justify-content: space-around;
+
+}
+#subtraction-guest{
+    margin-right: 27px;
+    height: 18px;
+    font-size: 12px;
+    font-weight: 900;
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+    border-radius: 2px;
+    background-color: #1B244A;
+
+    font-family: Digital Display;
+}
+#addition-guest{
+    margin-left: 28px;
+    height: 18px;
+    font-size: 11px;
+    font-weight: 900;
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+    border-radius: 2px;
+    background-color: #1B244A;
+
+    font-family: Digital Display;
+
+    
+}
+#img-logo{
+    border-radius: 50%;
+    width: 100px;
+    margin-left: 29px;
+    border: 2px solid black;
+}
