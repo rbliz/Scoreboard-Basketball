@@ -12,36 +12,49 @@ var appendMinutes = document.getElementById("minutes")
 var appendSeconds = document.getElementById("seconds")
 var appendMilliseconds = document.getElementById("milliseconds")
 var interval
-
+let decrementHome = document.getElementById("subtraction-home")
+let decrementGuest = document.getElementById("subtraction-guest")
 
 function add1Home() {
 totalHome += addOne
+decrementHome.disabled = false
+
 scoreHome.textContent = totalHome
 }
 
 function add2Home() {
 totalHome += addTwo
+decrementHome.disabled = false
+
 scoreHome.textContent = totalHome
 }
 
 function add3Home() {
      totalHome += addThree
+     decrementHome.disabled = false
+
 scoreHome.textContent = totalHome
 }
 
 
 function add1Guest() {
 totalGuest += addOne
+decrementGuest.disabled = false
+
 scoreGuest.textContent = totalGuest
 }
 
 function add2Guest() {
 totalGuest += addTwo
+decrementGuest.disabled = false
+
 scoreGuest.textContent = totalGuest
 }
 
 function add3Guest() {
      totalGuest += addThree
+     decrementGuest.disabled = false
+
 scoreGuest.textContent = totalGuest
 }
 
@@ -68,7 +81,7 @@ function startTimer(){
        
               
         }
-     if(seconds > 60){
+     if(seconds > 59){
         minutes++
         if(minutes <= 9){
         appendMinutes.innerHTML = "0" + minutes
@@ -107,20 +120,34 @@ function pause(){
     
    function incrementHome(){
        totalHome += addOne
+       decrementHome.disabled = false
+
 scoreHome.textContent = totalHome
    }
    
 function subtractHome(){
+    if(totalHome === 0){
+        decrementHome.disabled = true
+    }
+    else if(totalHome > 0){
            totalHome -= addOne
-scoreHome.textContent = totalHome
+scoreHome.textContent = totalHome}
 }
 
 function incrementGuest(){
        totalGuest += addOne
+       decrementGuest.disabled = false
+
 scoreGuest.textContent = totalGuest
    }
    
 function subtractGuest(){
-          totalGuest -= addOne
-scoreGuest.textContent = totalGuest
+    if(totalGuest === 0){
+        decrementGuest.disabled = true
+    }else if(totalGuest > 0)
+    {
+        totalGuest -= addOne
+        scoreGuest.textContent = totalGuest
+    }
+         
 }
